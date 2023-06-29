@@ -1,10 +1,6 @@
 pipeline {
     agent { label 'jenkins-slave'}
 
-    environment {
-        function_name = 'java-sample'
-    }
-
     stages {
         stage('Build') {
             steps {
