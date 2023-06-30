@@ -1,5 +1,4 @@
 pipeline {
-    //agent { label 'jenkins-slave'}
     agent any
 
     stages {
@@ -10,7 +9,7 @@ pipeline {
             }
         }
 
-        stage('test') {
+        stage('Test') {
             steps {
                 echo 'test'
 
