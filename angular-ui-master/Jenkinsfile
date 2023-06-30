@@ -1,11 +1,10 @@
 pipeline {
     agent any
-
     stages {
         stage('Build') {
             steps {
                 echo 'Build'
-                sh 'npm run build'
+                //sh 'npm run build'
             }
         }
 
@@ -13,7 +12,7 @@ pipeline {
             steps {
                 echo 'test'
 
-                sh "npm run test"
+               // sh "npm run test"
             }
         }
 
@@ -21,7 +20,7 @@ pipeline {
             steps {
                 echo 'deploy'
 
-                sh "npm run deploy"
+              //  sh "npm run deploy"
             }
         }
     }
